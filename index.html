@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <link rel="stylesheet" href="./src/style.css" />
+  </head>
+  <body>
+    <div class="fixed z-[999999999] w-screen bg-neutral-silver" id="navbar">
+      <!-- Navbar Section -->
+      <nav
+        class="container relative flex items-center justify-between py-4 lg:py-6"
+      >
+        <!-- Logo -->
+        <img src="./src/assets/images/logo.svg" alt="logo" />
+
+        <label for="nav-check" class="lg:hidden"
+          ><i class="fas fa-bars text-3xl"></i
+        ></label>
+
+        <input type="checkbox" name="" id="nav-check" class="hidden" />
+
+        <!-- Nav list -->
+        <ul
+          class="absolute right-0 top-full h-0 max-h-96 z-10 flex w-full flex-col justify-center divide-y lg:divide-y-0 divide-primary bg-white text-right shadow-2xl lg:static lg:w-fit lg:flex-row lg:bg-transparent lg:p-0 lg:shadow-none font-medium text-body-2"
+        >
+          <!-- Nav item -->
+          <li>
+            <a
+              href="#"
+              class="p-4 inline-block w-full hover:bg-primary hover:text-white transition lg:hover:bg-transparent lg:hover:text-primary relative group text-body-1 lg:text-body-2"
+            >
+              Home
+
+              <div
+                class="absolute w-0 group-hover:w-full h-0 lg:h-px left-0 bottom-0 right-0 mx-auto bg-primary-800 transition-[width]"
+              ></div>
+            </a>
+          </li>
+
+          <!-- Nav item -->
+          <li>
+            <a
+              href="#about"
+              class="p-4 inline-block w-full hover:bg-primary hover:text-white transition lg:hover:bg-transparent lg:hover:text-primary relative group text-body-1 lg:text-body-2"
+            >
+              About Us
+
+              <div
+                class="absolute w-0 group-hover:w-full h-0 lg:h-px left-0 bottom-0 right-0 mx-auto bg-primary-800 transition-[width]"
+              ></div>
+            </a>
+          </li>
+
+          <!-- Nav item -->
+          <li>
+            <a
+              href="#services"
+              class="p-4 inline-block w-full hover:bg-primary hover:text-white transition lg:hover:bg-transparent lg:hover:text-primary relative group text-body-1 lg:text-body-2"
+            >
+              Services
+
+              <div
+                class="absolute w-0 group-hover:w-full h-0 lg:h-px left-0 bottom-0 right-0 mx-auto bg-primary-800 transition-[width]"
+              ></div>
+            </a>
+          </li>
+
+          <!-- Nav item -->
+          <li>
+            <a
+              href="#appointments"
+              class="p-4 inline-block w-full hover:bg-primary hover:text-white transition lg:hover:bg-transparent lg:hover:text-primary relative group text-body-1 lg:text-body-2"
+            >
+              Appointment
+
+              <div
+                class="absolute w-0 group-hover:w-full h-0 lg:h-px left-0 bottom-0 right-0 mx-auto bg-primary-800 transition-[width]"
+              ></div>
+            </a>
+          </li>
+
+          <!-- Nav item -->
+          <li>
+            <a
+              href="#testimonials"
+              class="p-4 inline-block w-full hover:bg-primary hover:text-white transition lg:hover:bg-transparent lg:hover:text-primary relative group text-body-1 lg:text-body-2"
+            >
+              Testimonials
+
+              <div
+                class="absolute w-0 group-hover:w-full h-0 lg:h-px left-0 bottom-0 right-0 mx-auto bg-primary-800 transition-[width]"
+              ></div>
+            </a>
+          </li>
+
+          <!-- Nav item -->
+          <li>
+            <a
+              href="#"
+              class="p-4 inline-block w-full hover:bg-primary hover:text-white transition lg:hover:bg-transparent lg:hover:text-primary relative group text-body-1 lg:text-body-2"
+            >
+              Contact
+
+              <div
+                class="absolute w-0 group-hover:w-full h-0 lg:h-px left-0 bottom-0 right-0 mx-auto bg-primary-800 transition-[width]"
+              ></div>
+            </a>
+          </li>
+        </ul>
+
+        <div class="hidden gap-2 lg:flex">
+          <a href="#" class="button">Log in</a>
+          <a href="#" class="button-primary">Sign up</a>
+        </div>
+      </nav>
+    </div>
+    <div class="bg-neutral-silver py-6"></div>
+
+    <script
+      src="https://kit.fontawesome.com/b50fc748ca.js"
+      crossorigin="anonymous"
+    ></script>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

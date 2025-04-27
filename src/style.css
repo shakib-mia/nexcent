@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container {
+  @apply px-4 mx-auto;
+}
+
+#navbar ul {
+  @apply px-0 overflow-hidden p-0 transition-[height] duration-500 ease-in-out h-0 lg:h-auto;
+}
+
+.button-primary {
+  @apply bg-primary text-white font-bold py-4 px-8 rounded hover:bg-primary-700 transition;
+}
+
+.button {
+  @apply bg-transparent text-primary font-bold py-4 px-8 rounded hover:bg-primary-100 transition;
+}
+
+#nav-check:checked ~ ul {
+  @apply h-[23rem] lg:h-auto;
+}
