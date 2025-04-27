@@ -1,6 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  font-family: "Inter", sans-serif;
+}
 
 .container {
   @apply px-4 mx-auto;
@@ -20,4 +25,20 @@
 
 #nav-check:checked ~ ul {
   @apply h-[23rem] lg:h-auto;
+}
+
+h1 {
+  @apply text-headline-2 lg:text-headline-1;
+}
+
+.owl-dot {
+  @apply w-3 h-3 !bg-primary rounded-full bg-opacity-30;
+}
+
+.owl-dot.active {
+  @apply bg-opacity-100;
+}
+
+.owl-dots {
+  @apply flex justify-center space-x-2 mt-4;
 }

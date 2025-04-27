@@ -4,17 +4,37 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>Nexcent - Lessons and insights from 8 years</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <link rel="stylesheet" href="./src/style.css" />
   </head>
   <body>
-    <div class="fixed z-[999999999] w-screen bg-neutral-silver" id="navbar">
+    <div class="w-screen bg-neutral-silver" id="navbar">
       <!-- Navbar Section -->
       <nav
         class="container relative flex items-center justify-between py-4 lg:py-6"
       >
         <!-- Logo -->
-        <img src="./src/assets/images/logo.svg" alt="logo" />
+        <a href="#">
+          <img src="./src/assets/images/logo.svg" alt="logo" />
+        </a>
 
         <label for="nav-check" class="lg:hidden"
           ><i class="fas fa-bars text-3xl"></i
@@ -24,7 +44,7 @@
 
         <!-- Nav list -->
         <ul
-          class="absolute right-0 top-full h-0 max-h-96 z-10 flex w-full flex-col justify-center divide-y lg:divide-y-0 divide-primary bg-white text-right shadow-2xl lg:static lg:w-fit lg:flex-row lg:bg-transparent lg:p-0 lg:shadow-none font-medium text-body-2"
+          class="absolute right-0 top-full h-0 max-h-96 z-10 flex w-full flex-col justify-center divide-y lg:divide-y-0 divide-primary bg-neutral-silver text-right shadow-2xl lg:static lg:w-fit lg:flex-row lg:bg-transparent lg:p-0 lg:shadow-none font-medium text-body-2"
         >
           <!-- Nav item -->
           <li>
@@ -117,11 +137,125 @@
         </div>
       </nav>
     </div>
-    <div class="bg-neutral-silver py-6"></div>
+    <header class="bg-neutral-silver py-12 lg:py-24">
+      <div class="container">
+        <div class="owl-carousel">
+          <div
+            class="flex flex-col-reverse lg:flex-row gap-12 lg:gap-28 items-center bg-neutral-silver mb-10 lg:mb-0"
+          >
+            <aside class="w-full lg:w-1/2">
+              <h1
+                class="font-semibold text-neutral-dark-gray text-center lg:text-left"
+              >
+                Lessons and insights
+                <span class="text-primary">from 8 years</span>
+              </h1>
+
+              <p
+                class="mt-4 mb-4 lg:mb-8 text-neutral-gray text-body-2 text-center lg:text-left"
+              >
+                Where to grow your business as a photographer: site or social
+                media?
+              </p>
+
+              <div class="flex gap-2 justify-center lg:justify-start">
+                <a href="#" class="button lg:hidden">Log in</a>
+                <a href="#" class="button-primary">Register</a>
+              </div>
+            </aside>
+
+            <aside class="w-2/3 mx-auto lg:w-1/3">
+              <img
+                class="w-full"
+                src="./src/assets/images/hero.png"
+                alt="hero"
+              />
+            </aside>
+          </div>
+
+          <div
+            class="flex flex-col-reverse lg:flex-row-reverse gap-12 lg:gap-28 items-center bg-neutral-silver mb-10 lg:mb-0"
+          >
+            <aside class="w-full lg:w-1/2">
+              <h1
+                class="font-semibold text-neutral-dark-gray text-center lg:text-left"
+              >
+                Lessons and insights
+                <span class="text-primary">from 8 years</span>
+              </h1>
+
+              <p
+                class="mt-4 mb-4 lg:mb-8 text-neutral-gray text-body-2 text-center lg:text-left"
+              >
+                Where to grow your business as a photographer: site or social
+                media?
+              </p>
+
+              <div class="flex gap-2 justify-center lg:justify-start">
+                <a href="#" class="button lg:hidden">Log in</a>
+                <a href="#" class="button-primary">Register</a>
+              </div>
+            </aside>
+            <aside class="w-2/3 mx-auto lg:w-1/3">
+              <img
+                class="w-full"
+                src="./src/assets/images/hero.png"
+                alt="hero"
+              />
+            </aside>
+          </div>
+
+          <div
+            class="flex flex-col-reverse lg:flex-row gap-12 lg:gap-28 items-center bg-neutral-silver mb-10 lg:mb-0"
+          >
+            <aside class="w-full lg:w-1/2">
+              <h1
+                class="font-semibold text-neutral-dark-gray text-center lg:text-left"
+              >
+                Lessons and insights
+                <span class="text-primary">from 8 years</span>
+              </h1>
+
+              <p
+                class="mt-4 mb-4 lg:mb-8 text-neutral-gray text-body-2 text-center lg:text-left"
+              >
+                Where to grow your business as a photographer: site or social
+                media?
+              </p>
+
+              <div class="flex gap-2 justify-center lg:justify-start">
+                <a href="#" class="button lg:hidden">Log in</a>
+                <a href="#" class="button-primary">Register</a>
+              </div>
+            </aside>
+
+            <aside class="w-2/3 mx-auto lg:w-1/3">
+              <img
+                class="w-full"
+                src="./src/assets/images/hero.png"
+                alt="hero"
+              />
+            </aside>
+          </div>
+        </div>
+      </div>
+    </header>
 
     <script
       src="https://kit.fontawesome.com/b50fc748ca.js"
       crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     ></script>
     <script type="module" src="/src/main.js"></script>
   </body>
