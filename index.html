@@ -28,11 +28,12 @@
     />
 
     <!-- Animate.css for adding simple animations -->
-    <link
+    <!-- <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
+    /> -->
 
+    <script src="./lib/scrollAnimate.js"></script>
     <!-- Custom CSS file for this website -->
     <link rel="stylesheet" href="./src/style.css" />
   </head>
@@ -154,127 +155,157 @@
         <div class="owl-carousel">
           <!-- First slide of the carousel -->
           <div
-            class="flex flex-col-reverse lg:flex-row gap-12 lg:gap-28 items-center bg-neutral-silver mb-10 lg:mb-0"
+            class="flex flex-col-reverse lg:flex-row gap-12 lg:gap-16 items-center bg-neutral-silver mb-10 lg:mb-0"
           >
-            <!-- Text section inside first slide -->
-            <aside class="w-full lg:w-1/2">
+            <!-- Text section -->
+            <aside class="w-full lg:w-7/12">
               <h1
                 class="font-semibold text-neutral-dark-gray text-center lg:text-left"
               >
-                Lessons and insights
-                <span class="text-primary">from 8 years</span>
+                Empowering startups
+                <span class="text-primary">with smart solutions</span>
               </h1>
-
               <p
                 class="mt-4 mb-4 lg:mb-8 text-neutral-gray text-body-2 text-center lg:text-left"
               >
-                Where to grow your business as a photographer: site or social
-                media?
+                Discover the tools and techniques that drive growth in
+                early-stage businesses.
               </p>
-
-              <!-- Register or Login buttons -->
               <div class="flex gap-2 justify-center lg:justify-start">
-                <a href="#" class="button lg:hidden">Log in</a>
-                <a href="#" class="button-primary">Register</a>
+                <a href="#" class="button lg:hidden">Learn More</a>
+                <a href="#" class="button-primary">Get Started</a>
               </div>
             </aside>
-
-            <!-- Image section inside first slide -->
-            <aside class="w-2/3 mx-auto lg:w-1/3">
+            <!-- Image section -->
+            <aside class="w-2/3 mx-auto lg:w-5/12">
               <img
                 class="w-full"
                 src="./src/assets/images/hero.png"
-                alt="hero"
+                alt="Startup Tools"
               />
             </aside>
           </div>
 
-          <!-- Second slide (similar layout but reversed for variety) -->
+          <!-- Second slide -->
           <div
-            class="flex flex-col-reverse lg:flex-row-reverse gap-12 lg:gap-28 items-center bg-neutral-silver mb-10 lg:mb-0"
+            class="flex flex-col-reverse lg:flex-row gap-12 lg:gap-16 items-center bg-neutral-silver mb-10 lg:mb-0"
           >
-            <!-- Same structure: text and image -->
-            <aside class="w-full lg:w-1/2">
-              <h1
-                class="font-semibold text-neutral-dark-gray text-center lg:text-left"
-              >
-                Lessons and insights
-                <span class="text-primary">from 8 years</span>
-              </h1>
-
-              <p
-                class="mt-4 mb-4 lg:mb-8 text-neutral-gray text-body-2 text-center lg:text-left"
-              >
-                Where to grow your business as a photographer: site or social
-                media?
-              </p>
-
-              <div class="flex gap-2 justify-center lg:justify-start">
-                <a href="#" class="button lg:hidden">Log in</a>
-                <a href="#" class="button-primary">Register</a>
-              </div>
-            </aside>
-
-            <aside class="w-2/3 mx-auto lg:w-1/3">
+            <aside class="w-2/3 mx-auto lg:w-5/12">
               <img
                 class="w-full"
                 src="./src/assets/images/hero.png"
-                alt="hero"
+                alt="Marketing Strategies"
+              />
+            </aside>
+            <aside class="w-full lg:w-7/12">
+              <h1
+                class="font-semibold text-neutral-dark-gray text-center lg:text-left"
+              >
+                Mastering
+                <span class="text-primary">digital marketing</span>
+              </h1>
+              <p
+                class="mt-4 mb-4 lg:mb-8 text-neutral-gray text-body-2 text-center lg:text-left"
+              >
+                From content creation to ad campaigns—build visibility that
+                converts.
+              </p>
+              <div class="flex gap-2 justify-center lg:justify-start">
+                <a href="#" class="button lg:hidden">Explore</a>
+                <a href="#" class="button-primary">Join Now</a>
+              </div>
+            </aside>
+          </div>
+
+          <!-- Third slide -->
+          <div
+            class="flex flex-col-reverse lg:flex-row gap-12 lg:gap-16 items-center bg-neutral-silver mb-10 lg:mb-0"
+          >
+            <aside class="w-full lg:w-7/12">
+              <h1
+                class="font-semibold text-neutral-dark-gray text-center lg:text-left"
+              >
+                Build a
+                <span class="text-primary">strong online presence</span>
+              </h1>
+              <p
+                class="mt-4 mb-4 lg:mb-8 text-neutral-gray text-body-2 text-center lg:text-left"
+              >
+                Craft websites and apps that engage users and reflect your
+                brand.
+              </p>
+              <div class="flex gap-2 justify-center lg:justify-start">
+                <a href="#" class="button lg:hidden">Discover</a>
+                <a href="#" class="button-primary">Launch Now</a>
+              </div>
+            </aside>
+            <aside class="w-2/3 mx-auto lg:w-5/12">
+              <img
+                class="w-full"
+                src="./src/assets/images/hero.png"
+                alt="Web Presence"
               />
             </aside>
           </div>
 
-          <!-- Third slide (similar to first slide) -->
+          <!-- Fourth slide -->
           <div
-            class="flex flex-col-reverse lg:flex-row gap-12 lg:gap-28 items-center bg-neutral-silver mb-10 lg:mb-0"
+            class="flex flex-col-reverse lg:flex-row gap-12 lg:gap-16 items-center bg-neutral-silver mb-10 lg:mb-0"
           >
-            <aside class="w-full lg:w-1/2">
-              <h1
-                class="font-semibold text-neutral-dark-gray text-center lg:text-left"
-              >
-                Lessons and insights
-                <span class="text-primary">from 8 years</span>
-              </h1>
-
-              <p
-                class="mt-4 mb-4 lg:mb-8 text-neutral-gray text-body-2 text-center lg:text-left"
-              >
-                Where to grow your business as a photographer: site or social
-                media?
-              </p>
-
-              <div class="flex gap-2 justify-center lg:justify-start">
-                <a href="#" class="button lg:hidden">Log in</a>
-                <a href="#" class="button-primary">Register</a>
-              </div>
-            </aside>
-
-            <aside class="w-2/3 mx-auto lg:w-1/3">
+            <aside class="w-2/3 mx-auto lg:w-5/12">
               <img
                 class="w-full"
                 src="./src/assets/images/hero.png"
-                alt="hero"
+                alt="Team Collaboration"
               />
+            </aside>
+            <aside class="w-full lg:w-7/12">
+              <h1
+                class="font-semibold text-neutral-dark-gray text-center lg:text-left"
+              >
+                Collaborate
+                <span class="text-primary">to innovate</span>
+              </h1>
+              <p
+                class="mt-4 mb-4 lg:mb-8 text-neutral-gray text-body-2 text-center lg:text-left"
+              >
+                Unlock team potential with tools that streamline communication
+                and ideas.
+              </p>
+              <div class="flex gap-2 justify-center lg:justify-start">
+                <a href="#" class="button lg:hidden">Team Up</a>
+                <a href="#" class="button-primary">Start Today</a>
+              </div>
             </aside>
           </div>
         </div>
+
         <!-- End of carousel -->
       </div>
       <!-- End of container -->
     </header>
 
     <!-- Clients Section -->
-    <section class="my-10" id="clients">
+    <section class="py-10" id="clients">
       <div class="container">
-        <h2 class="text-neutral-dark-gray text-center font-semibold">
+        <h2
+          class="text-neutral-dark-gray text-center font-semibold"
+          data-animate="fadeInUp"
+          data-duration="1000"
+        >
           Our Clients
         </h2>
 
-        <p class="mt-2 mb-4 text-center text-neutral-gray text-body-2">
+        <p
+          class="mt-2 mb-4 text-center text-neutral-gray text-body-2"
+          data-animate="fadeInUp"
+          data-duration="1000"
+          data-delay="400"
+        >
           We have been working with some Fortune 500+ clients
         </p>
 
-        <div class="owl-carousel">
+        <div class="owl-carousel" data-animate="fadeInUp" data-duration="1000">
           <div class="flex justify-center items-center">
             <img
               src="./src/assets/images/clients/Logo-1.jpg"
@@ -327,6 +358,462 @@
         </div>
       </div>
     </section>
+
+    <section class="container py-10">
+      <div class="lg:w-1/2 lg:px-12 mx-auto text-center">
+        <h2
+          class="text-headline-4 lg:text-headline-2 font-semibold w-5/6 mx-auto lg:w-full"
+          data-animate="fadeInLeft"
+          data-duration="1000"
+          data-delay="100"
+        >
+          Manage your entire community in a single system
+        </h2>
+
+        <p
+          class="text-body-2 text-neutral-gray mt-2"
+          data-animate="fadeInLeft"
+          data-duration="1000"
+          data-delay="400"
+        >
+          Who is Nextcent suitable for?
+        </p>
+      </div>
+
+      <div class="grid mt-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+        <article data-animate="fadeInUp" data-duration="1000">
+          <div
+            class="py-6 px-12 text-center flex flex-col justify-center items-center shadow-[0_2px_4px_0_#ABBED1] hover:shadow-[0_12px_16px_0_#ABBED1] rounded-lg transition hover:scale-110"
+          >
+            <img src="./src/assets/icons/membership.svg" alt="membership" />
+
+            <h3 class="mt-4 mb-2 text-headline-3 font-bold">
+              Membership Organisations
+            </h3>
+
+            <p class="text-body-3 text-neutral-gray">
+              Our membership management software provides full automation of
+              membership renewals and payments
+            </p>
+          </div>
+        </article>
+
+        <article data-animate="fadeInUp" data-duration="1000" data-delay="100">
+          <div
+            class="py-6 px-12 text-center flex flex-col justify-center items-center shadow-[0_2px_4px_0_#ABBED1] hover:shadow-[0_12px_16px_0_#ABBED1] rounded-lg transition hover:scale-110"
+          >
+            <img
+              src="./src/assets/icons/national-associations.svg"
+              alt="membership"
+            />
+
+            <h3 class="mt-4 mb-2 text-headline-3 font-bold">
+              National Associations
+            </h3>
+
+            <p class="text-body-3 text-neutral-gray">
+              Our membership management software provides full automation of
+              membership renewals and payments
+            </p>
+          </div>
+        </article>
+
+        <article data-animate="fadeInUp" data-duration="1000" data-delay="200">
+          <div
+            class="py-6 px-12 text-center flex flex-col justify-center items-center shadow-[0_2px_4px_0_#ABBED1] hover:shadow-[0_12px_16px_0_#ABBED1] rounded-lg transition hover:scale-110"
+          >
+            <img
+              src="./src/assets/icons/clubs-and-groups.svg"
+              alt="membership"
+            />
+
+            <h3 class="mt-4 mb-2 text-headline-3 font-bold lg:w-10/12">
+              Clubs And Groups
+            </h3>
+
+            <p class="text-body-3 text-neutral-gray">
+              Our membership management software provides full automation of
+              membership renewals and payments
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section
+      class="py-10 flex container gap-12 flex-col lg:flex-row items-center"
+    >
+      <aside class="w-full lg:w-5/12">
+        <img
+          src="./src/assets/images/rafiki.jpg"
+          alt="The unseen of spending three years at Pixelgrade"
+          class="w-full"
+          data-animate="fadeInLeft"
+        />
+      </aside>
+      <aside class="w-full lg:w-7/12">
+        <h2
+          class="text-headline-2 text-neutral-dark-gray font-semibold lg:w-5/6"
+          data-animate="fadeInRight"
+        >
+          The unseen of spending three years at Pixelgrade
+        </h2>
+
+        <p
+          class="lg:w-11/12 text-body-3 text-neutral-gray mt-4 mb-8"
+          data-animate="fadeInRight"
+        >
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet
+          justo ipsum. Sed accumsan quam vitae est varius fringilla.
+          Pellentesque placerat vestibulum lorem sed porta. Nullam mattis
+          tristique iaculis. Nullam pulvinar sit amet risus pretium auctor.
+          Etiam quis massa pulvinar, aliquam quam vitae, tempus sem. Donec
+          elementum pulvinar odio.
+        </p>
+
+        <div data-animate="jackInTheBox">
+          <button class="button-primary">Learn More</button>
+        </div>
+      </aside>
+    </section>
+
+    <section class="bg-neutral-silver py-16">
+      <div class="container">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          <aside>
+            <h2 class="text-headline-2 font-semibold" data-animate="fadeInLeft">
+              Helping a local
+              <span class="text-primary"> business reinvent itself </span>
+            </h2>
+
+            <p class="text-body-2 mt-2" data-animate="fadeInLeft">
+              We reached here with our hard work and dedication
+            </p>
+          </aside>
+
+          <aside>
+            <div
+              class="grid grid-cols-1 items-center lg:grid-cols-2 gap-x-7 gap-y-10"
+            >
+              <div class="flex gap-4" data-animate="fadeInRight">
+                <img src="./src/assets/icons/members.svg" alt="membership" />
+                <aside>
+                  <h3
+                    class="text-headline-3 font-bold text-neutral-dark-gray counter"
+                    data-target="2245341"
+                  >
+                    2,245,341
+                  </h3>
+                  <p class="text-body-2">Members</p>
+                </aside>
+              </div>
+              <div class="flex gap-4" data-animate="fadeInRight">
+                <img src="./src/assets/icons/clubs.svg" alt="bookings" />
+                <aside>
+                  <h3
+                    class="text-headline-3 font-bold text-neutral-dark-gray counter"
+                    data-target="46328"
+                  >
+                    0
+                  </h3>
+                  <p class="text-body-2">Clubs</p>
+                </aside>
+              </div>
+              <div
+                class="flex gap-4"
+                data-animate="fadeInRight"
+                data-delay="100"
+              >
+                <img src="./src/assets/icons/bookings.svg" alt="bookings" />
+                <aside>
+                  <h3
+                    class="text-headline-3 font-bold text-neutral-dark-gray counter"
+                    data-target="828867"
+                  >
+                    0
+                  </h3>
+                  <p class="text-body-2">Event Bookings</p>
+                </aside>
+              </div>
+
+              <div
+                class="flex gap-4"
+                data-animate="fadeInRight"
+                data-delay="100"
+              >
+                <img src="./src/assets/icons/payments.svg" alt="payments" />
+                <aside>
+                  <h3
+                    class="text-headline-3 font-bold text-neutral-dark-gray counter"
+                    data-target="1,926,436"
+                  >
+                    0
+                  </h3>
+                  <p class="text-body-2">Payments</p>
+                </aside>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="container py-16">
+      <div class="flex gap-12 items-center flex-col lg:flex-row">
+        <aside class="w-full lg:w-5/12">
+          <img
+            src="./src/assets/images/how-to-design.jpg"
+            alt="how-to-design"
+            data-animate="fadeInLeft"
+          />
+        </aside>
+
+        <aside class="w-full lg:w-7/12">
+          <h2 class="font-semibold" data-animate="fadeInRight">
+            How to design your site footer like we did
+          </h2>
+
+          <p class="mt-4 mb-8" data-animate="fadeInRight" data-delay="100">
+            Donec a eros justo. Fusce egestas tristique ultrices. Nam tempor,
+            augue nec tincidunt molestie, massa nunc varius arcu, at scelerisque
+            elit erat a magna. Donec quis erat at libero ultrices mollis. In hac
+            habitasse platea dictumst. Vivamus vehicula leo dui, at porta nisi
+            facilisis finibus. In euismod augue vitae nisi ultricies, non
+            aliquet urna tincidunt. Integer in nisi eget nulla commodo faucibus
+            efficitur quis massa. Praesent felis est, finibus et nisi ac,
+            hendrerit venenatis libero. Donec consectetur faucibus ipsum id
+            gravida.
+          </p>
+
+          <div data-animate="jackInTheBox">
+            <button class="button-primary">Learn More</button>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section class="bg-neutral-silver py-16" id="testimonial">
+      <div class="container flex flex-col lg:flex-row items-center">
+        <aside class="w-full lg:w-4/12" data-animate="fadeInLeft">
+          <img src="./src/assets/images/testimonial.png" alt="testimonial" />
+        </aside>
+
+        <aside class="w-full lg:w-8/12" data-animate="fadeInRight">
+          <div class="owl-carousel">
+            <div class="p-4 bg-neutral-silver">
+              <p>
+                Maecenas dignissim justo eget nulla rutrum molestie. Maecenas
+                lobortis sem dui, vel rutrum risus tincidunt ullamcorper. Proin
+                eu enim metus. Vivamus sed libero ornare, tristique quam in,
+                gravida enim. Nullam ut molestie arcu, at hendrerit elit. Morbi
+                laoreet elit at ligula molestie, nec molestie mi blandit.
+                Suspendisse cursus tellus sed augue ultrices, quis tristique
+                nulla sodales. Suspendisse eget lorem eu turpis vestibulum
+                pretium. Suspendisse potenti. Quisque malesuada enim sapien,
+                vitae placerat ante feugiat eget. Quisque vulputate odio neque,
+                eget efficitur libero condimentum id. Curabitur id nibh id sem
+                dignissim finibus ac sit amet magna.
+              </p>
+
+              <div class="mt-4">
+                <h4 class="text-headline-4 font-semibold text-primary">
+                  Tim Smith
+                </h4>
+                <h6 class="text-body-2 text-neutral-gray">
+                  British Dragon Boat Racing Association
+                </h6>
+              </div>
+            </div>
+
+            <div class="p-4 bg-neutral-silver">
+              <p>
+                Maecenas dignissim justo eget nulla rutrum molestie. Maecenas
+                lobortis sem dui, vel rutrum risus tincidunt ullamcorper. Proin
+                eu enim metus. Vivamus sed libero ornare, tristique quam in,
+                gravida enim. Nullam ut molestie arcu, at hendrerit elit. Morbi
+                laoreet elit at ligula molestie, nec molestie mi blandit.
+                Suspendisse cursus tellus sed augue ultrices, quis tristique
+                nulla sodales. Suspendisse eget lorem eu turpis vestibulum
+                pretium. Suspendisse potenti. Quisque malesuada enim sapien,
+                vitae placerat ante feugiat eget. Quisque vulputate odio neque,
+                eget efficitur libero condimentum id. Curabitur id nibh id sem
+                dignissim finibus ac sit amet magna.
+              </p>
+
+              <div class="mt-4">
+                <h4 class="text-headline-4 font-semibold text-primary">
+                  Tim Smith
+                </h4>
+                <h6 class="text-body-2 text-neutral-gray">
+                  British Dragon Boat Racing Association
+                </h6>
+              </div>
+            </div>
+
+            <div class="p-4 bg-neutral-silver">
+              <p>
+                Maecenas dignissim justo eget nulla rutrum molestie. Maecenas
+                lobortis sem dui, vel rutrum risus tincidunt ullamcorper. Proin
+                eu enim metus. Vivamus sed libero ornare, tristique quam in,
+                gravida enim. Nullam ut molestie arcu, at hendrerit elit. Morbi
+                laoreet elit at ligula molestie, nec molestie mi blandit.
+                Suspendisse cursus tellus sed augue ultrices, quis tristique
+                nulla sodales. Suspendisse eget lorem eu turpis vestibulum
+                pretium. Suspendisse potenti. Quisque malesuada enim sapien,
+                vitae placerat ante feugiat eget. Quisque vulputate odio neque,
+                eget efficitur libero condimentum id. Curabitur id nibh id sem
+                dignissim finibus ac sit amet magna.
+              </p>
+
+              <div class="mt-4">
+                <h4 class="text-headline-4 font-semibold text-primary">
+                  Tim Smith
+                </h4>
+                <h6 class="text-body-2 text-neutral-gray">
+                  British Dragon Boat Racing Association
+                </h6>
+              </div>
+            </div>
+
+            <div class="p-4 bg-neutral-silver">
+              <p>
+                Maecenas dignissim justo eget nulla rutrum molestie. Maecenas
+                lobortis sem dui, vel rutrum risus tincidunt ullamcorper. Proin
+                eu enim metus. Vivamus sed libero ornare, tristique quam in,
+                gravida enim. Nullam ut molestie arcu, at hendrerit elit. Morbi
+                laoreet elit at ligula molestie, nec molestie mi blandit.
+                Suspendisse cursus tellus sed augue ultrices, quis tristique
+                nulla sodales. Suspendisse eget lorem eu turpis vestibulum
+                pretium. Suspendisse potenti. Quisque malesuada enim sapien,
+                vitae placerat ante feugiat eget. Quisque vulputate odio neque,
+                eget efficitur libero condimentum id. Curabitur id nibh id sem
+                dignissim finibus ac sit amet magna.
+              </p>
+
+              <div class="mt-4">
+                <h4 class="text-headline-4 font-semibold text-primary">
+                  Tim Smith
+                </h4>
+                <h6 class="text-body-2 text-neutral-gray">
+                  British Dragon Boat Racing Association
+                </h6>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="py-16 pb-44 container">
+      <div class="lg:w-1/2 text-center mx-auto">
+        <h2 class="text-headline-2 text-neutral-gray font-semibold">
+          Caring is the new marketing
+        </h2>
+        <p class="mt-2 text-neutral-gray">
+          The Nexcent blog is the best place to read about the latest membership
+          insights, trends and more. See who's joining the community, read about
+          how our community are increasing their membership income and lot's
+          more.​
+        </p>
+      </div>
+
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-4 gap-6 gap-y-24"
+      >
+        <article class="relative group">
+          <div class="overflow-hidden rounded-lg">
+            <img
+              src="./src/assets/images/articles/image 18.jpg"
+              alt="article 1"
+              class="w-full aspect-video object-cover object-center group-hover:scale-110 transition"
+            />
+          </div>
+
+          <div
+            class="p-4 bg-neutral-silver rounded-lg absolute mx-6 -bottom-16 group-hover:shadow-xl shadow-black transition"
+          >
+            <h4
+              class="lg:text-headline-4 font-semibold text-neutral-gray mb-1 lg:mb-4 text-center"
+            >
+              Creating Streamlined Safeguarding Processes with OneRen
+            </h4>
+
+            <button
+              class="inline-block py-2 text-center w-full lg:text-headline-4 text-primary font-semibold"
+            >
+              Read More <i class="fas fa-arrow-right"></i>
+            </button>
+          </div>
+        </article>
+
+        <article class="relative group">
+          <div class="overflow-hidden rounded-lg">
+            <img
+              src="./src/assets/images/articles/image 19.jpg"
+              alt="article 1"
+              class="w-full aspect-video object-cover object-center group-hover:scale-110 transition"
+            />
+          </div>
+
+          <div
+            class="p-4 bg-neutral-silver rounded-lg absolute mx-6 -bottom-16 group-hover:shadow-xl shadow-black transition"
+          >
+            <h4
+              class="lg:text-headline-4 font-semibold text-neutral-gray mb-1 lg:mb-4 text-center"
+            >
+              What are your safeguarding responsibilities and how can you manage
+              them?
+            </h4>
+
+            <button
+              class="inline-block py-2 text-center w-full lg:text-headline-4 text-primary font-semibold"
+            >
+              Read More <i class="fas fa-arrow-right"></i>
+            </button>
+          </div>
+        </article>
+
+        <article class="relative group">
+          <div class="overflow-hidden rounded-lg">
+            <img
+              src="./src/assets/images/articles/image 20.jpg"
+              alt="article 1"
+              class="w-full aspect-video object-cover object-center group-hover:scale-110 transition"
+            />
+          </div>
+
+          <div
+            class="p-4 bg-neutral-silver rounded-lg absolute mx-6 -bottom-16 group-hover:shadow-xl shadow-black transition"
+          >
+            <h4
+              class="lg:text-headline-4 font-semibold text-neutral-gray mb-1 lg:mb-4 text-center"
+            >
+              Revamping the Membership Model with Triathlon Australia
+            </h4>
+
+            <button
+              class="inline-block py-2 text-center w-full lg:text-headline-4 text-primary font-semibold"
+            >
+              Read More <i class="fas fa-arrow-right"></i>
+            </button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="py-16 bg-neutral-silver">
+      <div class="container text-center lg:w-5/12 font-semibold">
+        <h1 class="text-center mb-8">
+          Pellentesque suscipit fringilla libero eu.
+        </h1>
+        <button class="button-primary">
+          Get a Demo <i class="fas fa-arrow-right"></i>
+        </button>
+      </div>
+    </section>
+
+    <footer class="bg-neutral-black py-16"></footer>
 
     <script
       src="https://kit.fontawesome.com/b50fc748ca.js"

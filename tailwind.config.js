@@ -2,6 +2,17 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
+    container: {
+      // margin: "0 auto",
+      // padding: "1rem",
+      center: true,
+      screens: {
+        sm: "100%",
+        md: "768px",
+        lg: "1000px",
+        xl: "1200px",
+      },
+    },
     extend: {
       colors: {
         neutral: {
@@ -47,16 +58,6 @@ export default {
       },
     },
   },
-  container: {
-    // margin: "0 auto",
-    // padding: "1rem",
-    center: true,
-    screens: {
-      sm: "100%",
-      md: "768px",
-      lg: "1000px",
-      xl: "1150px",
-    },
-  },
+
   plugins: [],
 };
