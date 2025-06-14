@@ -39,7 +39,7 @@
   </head>
   <body>
     <!-- Full screen width background for navbar -->
-    <div class="w-screen bg-neutral-silver" id="navbar">
+    <div class="w-screen bg-neutral-silver z-10" id="navbar">
       <!-- Navbar: Top menu with logo and links -->
       <nav
         class="container relative flex items-center justify-between py-4 lg:py-6"
@@ -74,13 +74,13 @@
             </a>
           </li>
 
-          <!-- About Us Menu Item -->
+          <!-- Features Menu Item -->
           <li>
             <a
-              href="#about"
+              href="#features"
               class="p-4 inline-block w-full hover:bg-primary hover:text-white transition lg:hover:bg-transparent lg:hover:text-primary relative group text-body-1 lg:text-body-2"
             >
-              About Us
+              Features
               <div
                 class="absolute w-0 group-hover:w-full h-0 lg:h-px left-0 bottom-0 right-0 mx-auto bg-primary-800 transition-[width]"
               ></div>
@@ -100,13 +100,13 @@
             </a>
           </li>
 
-          <!-- Appointments Menu Item -->
+          <!-- Products Menu Item -->
           <li>
             <a
-              href="#appointments"
+              href="#products"
               class="p-4 inline-block w-full hover:bg-primary hover:text-white transition lg:hover:bg-transparent lg:hover:text-primary relative group text-body-1 lg:text-body-2"
             >
-              Appointments
+              Products
               <div
                 class="absolute w-0 group-hover:w-full h-0 lg:h-px left-0 bottom-0 right-0 mx-auto bg-primary-800 transition-[width]"
               ></div>
@@ -116,7 +116,7 @@
           <!-- Testimonials Menu Item -->
           <li>
             <a
-              href="#testimonials"
+              href="#testimonial"
               class="p-4 inline-block w-full hover:bg-primary hover:text-white transition lg:hover:bg-transparent lg:hover:text-primary relative group text-body-1 lg:text-body-2"
             >
               Testimonials
@@ -149,7 +149,7 @@
     </div>
 
     <!-- Main banner section -->
-    <header class="bg-neutral-silver py-12 lg:py-24">
+    <header class="bg-neutral-silver pt-24 pb-12 lg:pb-24 lg:pt-32">
       <div class="container">
         <!-- Carousel (slider) that changes automatically -->
         <div class="owl-carousel">
@@ -359,15 +359,15 @@
       </div>
     </section>
 
-    <section class="container py-10">
+    <section class="container py-10" id="features">
       <div class="lg:w-1/2 lg:px-12 mx-auto text-center">
         <h2
-          class="text-headline-4 lg:text-headline-2 font-semibold w-5/6 mx-auto lg:w-full"
+          class="font-semibold sm:w-5/6 mx-auto lg:w-full"
           data-animate="fadeInLeft"
           data-duration="1000"
           data-delay="100"
         >
-          Manage your entire community in a single system
+          Manage your community in a single system
         </h2>
 
         <p
@@ -387,9 +387,7 @@
           >
             <img src="./src/assets/icons/membership.svg" alt="membership" />
 
-            <h3 class="mt-4 mb-2 text-headline-3 font-bold">
-              Membership Organisations
-            </h3>
+            <h3 class="mt-4 mb-2 font-bold">Membership Organisations</h3>
 
             <p class="text-body-3 text-neutral-gray">
               Our membership management software provides full automation of
@@ -407,9 +405,7 @@
               alt="membership"
             />
 
-            <h3 class="mt-4 mb-2 text-headline-3 font-bold">
-              National Associations
-            </h3>
+            <h3 class="mt-4 mb-2 font-bold">National Associations</h3>
 
             <p class="text-body-3 text-neutral-gray">
               Our membership management software provides full automation of
@@ -427,9 +423,7 @@
               alt="membership"
             />
 
-            <h3 class="mt-4 mb-2 text-headline-3 font-bold lg:w-10/12">
-              Clubs And Groups
-            </h3>
+            <h3 class="mt-4 mb-2 font-bold lg:w-10/12">Clubs And Groups</h3>
 
             <p class="text-body-3 text-neutral-gray">
               Our membership management software provides full automation of
@@ -477,13 +471,16 @@
       </aside>
     </section>
 
-    <section class="bg-neutral-silver py-16">
+    <section class="bg-neutral-silver py-16" id="services">
       <div class="container">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <aside>
             <h2 class="text-headline-2 font-semibold" data-animate="fadeInLeft">
               Helping a local
-              <span class="text-primary"> business reinvent itself </span>
+              <span class="text-primary">
+                business to <br />
+                reinvent itself
+              </span>
             </h2>
 
             <p class="text-body-2 mt-2" data-animate="fadeInLeft">
@@ -558,7 +555,7 @@
       </div>
     </section>
 
-    <section class="container py-16">
+    <section class="container py-16" id="products">
       <div class="flex gap-12 items-center flex-col lg:flex-row">
         <aside class="w-full lg:w-5/12">
           <img
@@ -707,10 +704,13 @@
 
     <section class="py-16 pb-44 container">
       <div class="lg:w-1/2 text-center mx-auto">
-        <h2 class="text-headline-2 text-neutral-gray font-semibold">
+        <h2
+          class="text-headline-2 text-neutral-gray font-semibold"
+          data-animate="fadeInLeft"
+        >
           Caring is the new marketing
         </h2>
-        <p class="mt-2 text-neutral-gray">
+        <p class="mt-2 text-neutral-gray" data-animate="fadeInLeft">
           The Nexcent blog is the best place to read about the latest membership
           insights, trends and more. See who's joining the community, read about
           how our community are increasing their membership income and lot's
@@ -719,9 +719,13 @@
       </div>
 
       <div
-        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-4 gap-6 gap-y-24"
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-4 lg:mt-8 gap-6 gap-y-24"
       >
-        <article class="relative group">
+        <article
+          class="relative group"
+          data-animate="fadeInUp"
+          data-delay="100"
+        >
           <div class="overflow-hidden rounded-lg">
             <img
               src="./src/assets/images/articles/image 18.jpg"
@@ -742,12 +746,16 @@
             <button
               class="inline-block py-2 text-center w-full lg:text-headline-4 text-primary font-semibold"
             >
-              Read More <i class="fas fa-arrow-right"></i>
+              Read More <i class="fas fa-arrow-right ml-3"></i>
             </button>
           </div>
         </article>
 
-        <article class="relative group">
+        <article
+          class="relative group"
+          data-animate="fadeInUp"
+          data-delay="200"
+        >
           <div class="overflow-hidden rounded-lg">
             <img
               src="./src/assets/images/articles/image 19.jpg"
@@ -769,12 +777,16 @@
             <button
               class="inline-block py-2 text-center w-full lg:text-headline-4 text-primary font-semibold"
             >
-              Read More <i class="fas fa-arrow-right"></i>
+              Read More <i class="fas fa-arrow-right ml-3"></i>
             </button>
           </div>
         </article>
 
-        <article class="relative group">
+        <article
+          class="relative group"
+          data-animate="fadeInUp"
+          data-delay="300"
+        >
           <div class="overflow-hidden rounded-lg">
             <img
               src="./src/assets/images/articles/image 20.jpg"
@@ -795,7 +807,7 @@
             <button
               class="inline-block py-2 text-center w-full lg:text-headline-4 text-primary font-semibold"
             >
-              Read More <i class="fas fa-arrow-right"></i>
+              Read More <i class="fas fa-arrow-right ml-3"></i>
             </button>
           </div>
         </article>
@@ -803,17 +815,202 @@
     </section>
 
     <section class="py-16 bg-neutral-silver">
-      <div class="container text-center lg:w-5/12 font-semibold">
-        <h1 class="text-center mb-8">
-          Pellentesque suscipit fringilla libero eu.
+      <div class="container text-center lg:w-6/12 xl:w-4/12 font-semibold">
+        <h1 class="text-center mb-8" data-animate="fadeInUp">
+          Unlock your <span class="text-primary">free demo</span> today.
         </h1>
-        <button class="button-primary">
-          Get a Demo <i class="fas fa-arrow-right"></i>
-        </button>
+
+        <form
+          action="https://example.com/subscribe"
+          method="POST"
+          class="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-0 w-full sm:w-auto"
+          data-animate="jackInTheBox"
+        >
+          <input
+            type="email"
+            name="email"
+            required
+            placeholder="Enter your email"
+            class="px-4 py-4 w-full rounded sm:w-auto sm:rounded-l sm:rounded-r-none border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary inline-block h-full"
+          />
+          <button
+            type="submit"
+            class="button-primary sm:!rounded-l-none border border-primary w-full sm:w-auto text-nowrap"
+          >
+            Get a Demo <i class="fas fa-arrow-right ml-2"></i>
+          </button>
+        </form>
       </div>
     </section>
 
-    <footer class="bg-neutral-black py-16"></footer>
+    <footer class="bg-neutral-black py-16 text-white">
+      <div class="container">
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-4"
+        >
+          <aside>
+            <img src="./src/assets/images/logo-white.svg" alt="logo-white" />
+
+            <div class="pt-5 pb-3 lg:pt-10 lg:pb-6">
+              <p>
+                Desigend by
+                <a
+                  href="https://www.figma.com/design/aJ9Oq8xw4MxEjMebCRy2dd/Responsive-Landing-Page-Design-%7C-Website-Home-Page-Design-%7C-Agency-Website-UI-Design--Community-?node-id=5-573&t=9DDT5zukeGTu3lym-0"
+                  target="_blank"
+                  class="underline hover:no-underline"
+                  >Nexcent ltd</a
+                >.
+              </p>
+
+              <p>
+                Developed by
+                <a
+                  href="https://md-shakib-mia.web.app/"
+                  target="_blank"
+                  class="underline hover:no-underline"
+                  >Md. Shakib Mia</a
+                >.
+              </p>
+
+              <p class="mt-1">All rights reserved.</p>
+            </div>
+
+            <div class="flex gap-2">
+              <a
+                href="https://github.com/shakib-mia"
+                target="_blank"
+                class="inline-flex w-12 aspect-square rounded-full bg-white bg-opacity-10 items-center justify-center text-white hover:bg-opacity-100 hover:text-black text-2xl transition"
+              >
+                <i class="fab fa-github"></i>
+              </a>
+
+              <a
+                href="https://www.facebook.com/abdullahalsamad.sakib"
+                target="_blank"
+                class="inline-flex w-12 aspect-square rounded-full bg-white bg-opacity-10 items-center justify-center text-white hover:bg-opacity-100 hover:text-black text-2xl transition"
+              >
+                <i class="fab fa-facebook"></i>
+              </a>
+
+              <a
+                href="https://x.com/md_shakib_mia"
+                target="_blank"
+                class="inline-flex w-12 aspect-square rounded-full bg-white bg-opacity-10 items-center justify-center text-white hover:bg-opacity-100 hover:text-black text-2xl transition"
+              >
+                <i class="fab fa-twitter"></i>
+              </a>
+            </div>
+          </aside>
+
+          <aside>
+            <h3
+              class="text-headline-4 lg:text-headline-3 font-semibold mb-5 lg:mb-10"
+            >
+              Links
+            </h3>
+            <ul class="flex flex-col gap-2 lg:gap-4">
+              <li>
+                <a href="#" class="relative group transition hover:text-primary"
+                  >About us<span
+                    class="inline-block w-0 transition-[width] group-hover:w-full h-px absolute -bottom-1 left-0 right-0 mx-auto bg-primary"
+                  ></span
+                ></a>
+              </li>
+              <li>
+                <a href="#" class="relative group transition hover:text-primary"
+                  >Blog<span
+                    class="inline-block w-0 transition-[width] group-hover:w-full h-px absolute -bottom-1 left-0 right-0 mx-auto bg-primary"
+                  ></span
+                ></a>
+              </li>
+              <li>
+                <a href="#" class="relative group transition hover:text-primary"
+                  >Contact us<span
+                    class="inline-block w-0 transition-[width] group-hover:w-full h-px absolute -bottom-1 left-0 right-0 mx-auto bg-primary"
+                  ></span
+                ></a>
+              </li>
+              <li>
+                <a href="#" class="relative group transition hover:text-primary"
+                  >Pricing<span
+                    class="inline-block w-0 transition-[width] group-hover:w-full h-px absolute -bottom-1 left-0 right-0 mx-auto bg-primary"
+                  ></span
+                ></a>
+              </li>
+              <li>
+                <a href="#" class="relative group transition hover:text-primary"
+                  >Testimonials<span
+                    class="inline-block w-0 transition-[width] group-hover:w-full h-px absolute -bottom-1 left-0 right-0 mx-auto bg-primary"
+                  ></span
+                ></a>
+              </li>
+            </ul>
+          </aside>
+          <aside>
+            <h3
+              class="text-headline-4 lg:text-headline-3 font-semibold mb-5 lg:mb-10"
+            >
+              Support
+            </h3>
+            <ul class="flex flex-col gap-2 lg:gap-4">
+              <li>
+                <a href="#" class="relative group transition hover:text-primary"
+                  >Help center<span
+                    class="inline-block w-0 transition-[width] group-hover:w-full h-px absolute -bottom-1 left-0 right-0 mx-auto bg-primary"
+                  ></span
+                ></a>
+              </li>
+              <li>
+                <a href="#" class="relative group transition hover:text-primary"
+                  >Terms of service<span
+                    class="inline-block w-0 transition-[width] group-hover:w-full h-px absolute -bottom-1 left-0 right-0 mx-auto bg-primary"
+                  ></span
+                ></a>
+              </li>
+              <li>
+                <a href="#" class="relative group transition hover:text-primary"
+                  >Legal<span
+                    class="inline-block w-0 transition-[width] group-hover:w-full h-px absolute -bottom-1 left-0 right-0 mx-auto bg-primary"
+                  ></span
+                ></a>
+              </li>
+              <li>
+                <a href="#" class="relative group transition hover:text-primary"
+                  >Privacy policy<span
+                    class="inline-block w-0 transition-[width] group-hover:w-full h-px absolute -bottom-1 left-0 right-0 mx-auto bg-primary"
+                  ></span
+                ></a>
+              </li>
+              <li>
+                <a href="#" class="relative group transition hover:text-primary"
+                  >Status<span
+                    class="inline-block w-0 transition-[width] group-hover:w-full h-px absolute -bottom-1 left-0 right-0 mx-auto bg-primary"
+                  ></span
+                ></a>
+              </li>
+            </ul>
+          </aside>
+          <aside>
+            <h3
+              class="text-headline-4 lg:text-headline-3 font-semibold mb-5 lg:mb-10"
+            >
+              Support
+            </h3>
+            <form class="relative">
+              <input
+                type="email"
+                class="bg-white bg-opacity-20 w-full px-4 py-4 rounded-lg"
+                placeholder="Your email address"
+              />
+
+              <button class="p-0 absolute right-4 top-0 bottom-0 my-auto">
+                <i class="far fa-paper-plane"></i>
+              </button>
+            </form>
+          </aside>
+        </div>
+      </div>
+    </footer>
 
     <script
       src="https://kit.fontawesome.com/b50fc748ca.js"
