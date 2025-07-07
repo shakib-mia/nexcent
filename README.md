@@ -1,12 +1,12 @@
-# Nexcent
+# 🌿 Nexcent
+
+**Nexcent** is a clean, modern single-page landing page template built with **vanilla Vite.js**, **Tailwind CSS**, and minimal JavaScript. Perfect for SaaS startups, marketing agencies, and small businesses that want a professional online presence without complex frameworks.
 
 # Vanilla Vite Template
 
 Thank you for checking out this demo template! This project is built using [Vite](https://vitejs.dev/) with plain HTML, CSS, and JavaScript for fast development and easy customization.
 
 ---
-
-## What is this?
 
 This is a clean, minimal starter template using Vite — a modern frontend build tool.  
 You can preview the live demo, customize the code, and use it for your own projects.
