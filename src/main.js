@@ -1,6 +1,9 @@
 import "../lib/scrollAnimate.js";
 import "../lib/counterAnimation.js";
 import Lenis from "lenis";
+import Swal from "sweetalert2";
+import axios from "axios";
+// import "sweetalert2/src/sweetalert2.scss";
 
 const lenis = new Lenis({
   duration: 1.2,
@@ -141,3 +144,61 @@ function createScrollDirectionTracker() {
 }
 
 createScrollDirectionTracker();
+
+const form = document.getElementById("newsletter-form");
+
+form.addEventListener("submit", async (e) => {
+  e.preventDefault();
+
+  const emailInput = document.getElementById("email");
+  const email = emailInput.value.trim();
+
+  if (!email) {
+    Swal.fire({
+      icon: "warning",
+      title: "Oops...",
+      text: "Please enter your email!",
+    });
+    return;
+  }
+
+  try {
+    Swal.showLoading(); // Loading spinner popup
+
+    const response = await axios.post(
+      "https://templatehearth-be.onrender.com/newsletter",
+      {
+        email,
+      }
+    );
+
+    const result = await response.data;
+
+    if (result.insertedId.length) {
+      Swal.fire({
+        icon: "success",
+        title: "Subscribed!",
+        text: result.message || "Thank you for subscribing!",
+        timer: 2500,
+        showConfirmButton: false,
+      });
+      form.reset();
+    } else {
+      Swal.fire({
+        icon: "error",
+        title: "Error",
+        text: result.message || "Subscription failed. Try again later.",
+      });
+    }
+  } catch (err) {
+    Swal.close();
+
+    Swal.fire({
+      icon: "error",
+      title: "Oops...",
+      text: "Something went wrong. Please try again later.",
+    });
+
+    console.error(err);
+  }
+});
