@@ -1,17 +1,25 @@
-# Nexcent
+# 🌿 Nexcent
 
-# Vanilla Vite Template
-
-Thank you for checking out this demo template! This project is built using [Vite](https://vitejs.dev/) with plain HTML, CSS, and JavaScript for fast development and easy customization.
+**Nexcent** is a clean, modern, and fully responsive single-page landing page template built with **vanilla Vite.js**, **Tailwind CSS**, and minimal JavaScript. Designed specifically for SaaS startups, marketing agencies, and small businesses that want a professional, lightweight, and fast-loading online presence without the overhead of complex frameworks.
 
 ---
 
-## What is this?
+## Why Choose Nexcent?
 
-This is a clean, minimal starter template using Vite — a modern frontend build tool.  
-You can preview the live demo, customize the code, and use it for your own projects.
+- **Lightweight & Fast:** Built with Vite.js for blazing fast development and optimized builds.
+- **Responsive Design:** Looks perfect on all devices — desktop, tablet, and mobile.
+- **Easy to Customize:** Uses Tailwind CSS with semantic utility classes and custom config for colors, fonts, and layout.
+- **SEO Friendly:** Semantic HTML, proper heading structure, meta tags, and fast load times for better search rankings.
+- **Minimal JavaScript:** Only essential scripts to keep your site fast and smooth.
 
 ---
+
+## Live Demo & Source Code
+
+Check out the live demo and explore the source code to see how Nexcent can kickstart your next project:
+
+- **Live Demo:** [https://nexcent-shakib.netlify.app/](https://nexcent-shakib.netlify.app/)
+- **GitHub Repository:** [https://github.com/shakib-mia/nexcent](https://github.com/shakib-mia/nexcent)
 
 ## Getting Started
 
@@ -82,6 +90,13 @@ You can find the full Tailwind config in `tailwind.config.js`:
 
 ---
 
+## Live Demo
+
+**Check out the live demo here:**  
+[Live Demo](https://nexcent-shakib.netlify.app/)
+
+---
+
 ## Need Help?
 
 If you have any questions or need support customizing this template, feel free to contact me!
@@ -92,4 +107,4 @@ Thank you for your interest and happy coding! 🚀
 
 ---
 
-_Created by [Nd. Shakib Mia](https://github.com/shakib-mia/)_
+_Created by [Md. Shakib Mia](https://github.com/shakib-mia/)_
